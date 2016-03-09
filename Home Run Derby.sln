@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home Run Derby.CSharp.Plugins", "Home Run Derby.CSharp.Plugins.csproj", "{1E93460D-19D2-F264-BE42-8911C240821A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home Run Derby.CSharp", "Home Run Derby.CSharp.csproj", "{FAB90516-7438-AC2F-CBEE-576878CEA487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home Run Derby.CSharp.Editor.Plugins", "Home Run Derby.CSharp.Editor.Plugins.csproj", "{1201218E-863B-E05C-2EB0-061E5E95DF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home Run Derby.CSharp.Editor", "Home Run Derby.CSharp.Editor.csproj", "{7525B415-C9FB-359A-B4CC-773A1C355695}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E93460D-19D2-F264-BE42-8911C240821A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E93460D-19D2-F264-BE42-8911C240821A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E93460D-19D2-F264-BE42-8911C240821A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E93460D-19D2-F264-BE42-8911C240821A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB90516-7438-AC2F-CBEE-576878CEA487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB90516-7438-AC2F-CBEE-576878CEA487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB90516-7438-AC2F-CBEE-576878CEA487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB90516-7438-AC2F-CBEE-576878CEA487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1201218E-863B-E05C-2EB0-061E5E95DF78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1201218E-863B-E05C-2EB0-061E5E95DF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1201218E-863B-E05C-2EB0-061E5E95DF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1201218E-863B-E05C-2EB0-061E5E95DF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7525B415-C9FB-359A-B4CC-773A1C355695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7525B415-C9FB-359A-B4CC-773A1C355695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7525B415-C9FB-359A-B4CC-773A1C355695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7525B415-C9FB-359A-B4CC-773A1C355695}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
