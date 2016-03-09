@@ -27,7 +27,7 @@ public class SwingScript : MonoBehaviour {
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
     private BodySourceManager _BodyManager;
 
-    private bool righty = false;
+    private bool righty = true;
 
     // Use this for initialization
     void Start () {
