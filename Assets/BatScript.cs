@@ -63,12 +63,13 @@ public class BatScript : MonoBehaviour {
                 //Vector3 n = info.contacts[0].normal;
                 float dvx = (angle_first_to_third < 90) ? -1.0f : 1.0f;
                 float vx = dvx * Mathf.Sqrt(Mathf.Abs(angle_first_to_third - 90) * 5);
-                float dvy = (angle_fly_ball < 90) ? -1.0f : 1.0f;
-                float vy = dvy * Mathf.Abs(20 * Mathf.Cos(angle_fly_ball));
+                float ay = Mathf.Sin(angle_fly_ball * Mathf.PI / 180.0f);
+                float vy = 10 + Mathf.Abs(20 * ay );
                 float vz = 14 + (5 * Random.value) - (normal.z * 9);
 
                 rb.velocity = new Vector3(vx, vy, vz);
                 debugger.Log("Velocity: " + rb.velocity.ToString(), null, LogType.Log);
+                debugger.Log("Sin(ay): " + ay, null, LogType.Log);
             }
             debugger.Log("-----------------------", null, LogType.Log);
         }

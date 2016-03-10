@@ -10,7 +10,9 @@ public class BodySourceView : MonoBehaviour
     
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
     private BodySourceManager _BodyManager;
-    
+
+    private static float kinectGroundLevel = -999.0f;
+
     private Dictionary<Kinect.JointType, Kinect.JointType> _BoneMap = new Dictionary<Kinect.JointType, Kinect.JointType>()
     {
         { Kinect.JointType.FootLeft, Kinect.JointType.AnkleLeft },
@@ -132,6 +134,11 @@ public class BodySourceView : MonoBehaviour
     {
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++)
         {
+            if (jt == Kinect.JointType.FootLeft && kinectGroundLevel == -999.0f && body.Joints[jt] != null)
+            {
+                kinectGroundLevel = body.Joints[jt].Position.Y;
+            }
+
             Kinect.Joint sourceJoint = body.Joints[jt];
             Kinect.Joint? targetJoint = null;
             
@@ -174,6 +181,6 @@ public class BodySourceView : MonoBehaviour
     
     public static Vector3 GetVector3FromJoint(Kinect.Joint joint)
     {
-        return new Vector3((joint.Position.X ) -1.0f, 1.0f + (1.71828f * joint.Position.Y), 2.0f - joint.Position.Z);
+        return new Vector3((joint.Position.X ) -1.0f, (1.71828f * joint.Position.Y) - kinectGroundLevel - 0.1f, 2.0f - joint.Position.Z);
     }
 }

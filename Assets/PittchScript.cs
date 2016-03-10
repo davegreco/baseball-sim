@@ -44,7 +44,7 @@ public class PittchScript : MonoBehaviour {
 
             // Changeup
             // GetComponent<Rigidbody>().velocity = new Vector3(0.4f, 4.4f, -15.19f);  // High
-            GetComponent<Rigidbody>().velocity = new Vector3(0.4f, 4.1f, -15.19f);  // High
+            GetComponent<Rigidbody>().velocity = new Vector3(0.4f, 3.8f, -15.19f);  // High
 
             nextActionTime = Time.time + pitchEverySeconds;
             pitch_now = false;
